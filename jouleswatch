@@ -24,8 +24,8 @@ PID3=$!
 wait $PID1
 
 # Send Ctrl + c or SIGINT to perf and trace-cmd
-kill -SIGINT $PID2
-kill -SIGINT $PID3
+sudo kill -SIGINT $PID2
+sudo kill -SIGINT $PID3
 
 # Wait until perf and trace-cmd finish
 wait $PID2
